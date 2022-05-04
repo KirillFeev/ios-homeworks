@@ -14,18 +14,20 @@ class MainTabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .lightGray
         setupControllers()
     }
 
     private func setupControllers() {
         
         let feedNavController = UINavigationController(rootViewController: feedVc)
-        feedNavController.tabBarItem.title = "Лента"
-        feedNavController.tabBarItem.image = UIImage(systemName: "bolt")
+        feedVc.tabBarItem.title = "Лента"
+        feedVc.tabBarItem.image = UIImage(systemName: "bolt")
         
         let profileNavController = UINavigationController(rootViewController: profileVc)
-        profileNavController.tabBarItem.title = "Профиль пользователя"
-        profileNavController.tabBarItem.image = UIImage(systemName: "face.smiling")
+        profileVc.tabBarItem.title = "Профиль пользователя"
+        profileVc.tabBarItem.image = UIImage(systemName: "face.smiling")
+        profileVc.navigationItem.title = "Profile"
         
         viewControllers = [feedNavController, profileNavController]
     }
