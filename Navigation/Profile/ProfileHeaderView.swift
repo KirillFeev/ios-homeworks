@@ -9,10 +9,10 @@ import UIKit
 
 class ProfileHeaderView: UIView {
 
-    let avatarImgView = UIImageView()
-    let userLabel = UILabel()
-    let statusText = UITextField()
-    let button = UIButton()
+    private let avatarImgView = UIImageView()
+    private let userLabel = UILabel()
+    private let statusText = UITextField()
+    private let button = UIButton()
     
         override init(frame: CGRect) {
             super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
