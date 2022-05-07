@@ -15,11 +15,20 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .lightGray
         navigationController?.navigationBar.backgroundColor = .white
-        view.addSubview(profileHeaderView)
+        profileHeaderView.translatesAutoresizingMaskIntoConstraints = false
+        Layout()
     }
     
-    override func viewWillLayoutSubviews() {
-        profileHeaderView.frame = self.view.safeAreaLayoutGuide.layoutFrame
+    private func Layout() {
+        
+        view.addSubview(profileHeaderView)
+        
+        NSLayoutConstraint.activate([
+            profileHeaderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            profileHeaderView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            profileHeaderView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            profileHeaderView.heightAnchor.constraint(equalToConstant: 220)
+        ])
     }
     
 }
