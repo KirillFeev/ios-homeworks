@@ -45,7 +45,7 @@ class ProfileHeaderView: UIView {
         return textField
     }()
     
-    private lazy var setStatusButton: UIButton = {
+    private let setStatusButton: UIButton = {
         let button = UIButton()
         button.setTitle("Show status", for: .normal)
         button.backgroundColor = .blue
@@ -61,7 +61,7 @@ class ProfileHeaderView: UIView {
         return button
     }()
     
-    private lazy var newButton: UIButton = {
+    private let newButton: UIButton = {
         let button = UIButton()
         button.setTitle("New button", for: .normal)
         button.backgroundColor = .blue
@@ -77,11 +77,11 @@ class ProfileHeaderView: UIView {
     }()
     
     override init(frame: CGRect) {
-        super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        Layout()
+        super.init(frame: frame)
+        layout()
     }
     
-    private func Layout() {
+    private func layout() {
         
         [avatarImageView, fullNameLabel, statusTextField, setStatusButton, newButton].forEach { self.addSubview($0) }
         

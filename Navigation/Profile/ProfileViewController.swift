@@ -16,10 +16,10 @@ class ProfileViewController: UIViewController {
         view.backgroundColor = .lightGray
         navigationController?.navigationBar.backgroundColor = .white
         profileHeaderView.translatesAutoresizingMaskIntoConstraints = false
-        Layout()
+        layout()
     }
     
-    private func Layout() {
+    private func layout() {
         
         view.addSubview(profileHeaderView)
         
