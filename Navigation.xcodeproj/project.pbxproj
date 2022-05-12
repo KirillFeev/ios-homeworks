@@ -20,6 +20,7 @@
 		ED241F02282297CA00631B58 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED241F01282297CA00631B58 /* PostViewController.swift */; };
 		ED241F04282297D800631B58 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED241F03282297D800631B58 /* InfoViewController.swift */; };
 		ED241F06282297E900631B58 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED241F05282297E900631B58 /* Post.swift */; };
+		ED30D2B8282C0EFE00FB6247 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30D2B7282C0EFE00FB6247 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		ED241F01282297CA00631B58 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ED241F03282297D800631B58 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		ED241F05282297E900631B58 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ED30D2B7282C0EFE00FB6247 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				ED241EFD2822957000631B58 /* ProfileHeaderView.swift */,
 				ED241EFE2822957000631B58 /* ProfileViewController.swift */,
+				ED30D2B7282C0EFE00FB6247 /* LogInViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				ED241F02282297CA00631B58 /* PostViewController.swift in Sources */,
 				ED241EE9282293EC00631B58 /* ViewController.swift in Sources */,
+				ED30D2B8282C0EFE00FB6247 /* LogInViewController.swift in Sources */,
 				ED241EFF2822957000631B58 /* ProfileHeaderView.swift in Sources */,
 				ED241EF92822953B00631B58 /* MainTabBarViewController.swift in Sources */,
 				ED241F04282297D800631B58 /* InfoViewController.swift in Sources */,

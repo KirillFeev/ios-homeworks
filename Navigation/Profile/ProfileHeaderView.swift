@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileHeaderView: UIView {
     
-    private let avatarImageView: UIImageView = {
+    private lazy var avatarImageView: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "images")
         image.layer.borderWidth = 3.0
@@ -21,7 +21,7 @@ class ProfileHeaderView: UIView {
         return image
     }()
     
-    private let fullNameLabel: UILabel = {
+    private lazy var fullNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Morpheus Cat"
         label.textColor = .black
@@ -30,13 +30,13 @@ class ProfileHeaderView: UIView {
         return label
     }()
     
-    private let statusLabel: UILabel = {
+    private lazy var statusLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    private let statusTextField: UITextField = {
+    private lazy var statusTextField: UITextField = {
         let textField = UITextField()
         textField.text = "Waiting for something..."
         textField.textColor = .gray
@@ -45,7 +45,7 @@ class ProfileHeaderView: UIView {
         return textField
     }()
     
-    private let setStatusButton: UIButton = {
+    private lazy var setStatusButton: UIButton = {
         let button = UIButton()
         button.setTitle("Show status", for: .normal)
         button.backgroundColor = .blue
@@ -61,7 +61,7 @@ class ProfileHeaderView: UIView {
         return button
     }()
     
-    private let newButton: UIButton = {
+    private lazy var newButton: UIButton = {
         let button = UIButton()
         button.setTitle("New button", for: .normal)
         button.backgroundColor = .blue
