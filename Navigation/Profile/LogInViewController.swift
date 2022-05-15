@@ -44,6 +44,7 @@ class LogInViewController: UIViewController {
         textField.font = UIFont(name: "normal", size: 16.0)
         textField.delegate = self
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
         return textField
     }()
     
@@ -61,6 +62,7 @@ class LogInViewController: UIViewController {
         textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.autocapitalizationType = .none
+        textField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
         return textField
     }()
     
@@ -140,9 +142,9 @@ class LogInViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
         
         scrollView.addSubview(contentView)
