@@ -10,7 +10,8 @@ import UIKit
 class MainTabBarViewController: UITabBarController {
 
     let feedVc = FeedViewController()
-    let profileVc = ProfileViewController()
+//    let profileVc = ProfileViewController()
+    let profileVc = LogInViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class MainTabBarViewController: UITabBarController {
         profileVc.tabBarItem.title = "Профиль пользователя"
         profileVc.tabBarItem.image = UIImage(systemName: "face.smiling")
         profileVc.navigationItem.title = "Profile"
+        profileNavController.navigationBar.isHidden = true
         
         viewControllers = [feedNavController, profileNavController]
     }
